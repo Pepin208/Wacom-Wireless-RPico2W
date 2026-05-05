@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "pico/stdlib.h"
 #include "usb_host.h"
 #include "wacom_hid.h"

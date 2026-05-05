@@ -1,12 +1,10 @@
 #include "usb_host.h"
-#include "bsp/board_api.h"
 #include "tusb.h"
 #include "config.h"
 
 static usb_report_cb_t report_cb = NULL;
 
 void usb_host_init(void) {
-    board_init();
     tusb_init();
 }
 

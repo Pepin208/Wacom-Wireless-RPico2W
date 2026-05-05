@@ -1,0 +1,11 @@
+[Unit]
+Description=Wacom Wireless WiFi Daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/wacom_wifi_daemon
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
